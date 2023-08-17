@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>About </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    
+</head>
+<body>
+    <h1>My Profile</h1>
+
+     <h3> My name is  {{username}}</h1>
+     <h3>My Contact number is {{phone}}</h3>
+     <h3>My birthdate is {{birthday}}</h3>   
+
+     <form action="/about" method="post">
+
+  <label for="task">Task:</label><br>
+  <input type="text" id="fname" name="task" value=""><br>
+  <label for="lname">Description:</label><br>
+  <input type="text" id="lname" name="discription" value=""><br><br>
+  <input type="submit" value="Submit">
+  <h2>{{message}}</h2>
+
+  </form>
+ 
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src="https://apis.google.com/js/platform.js"async defer></script>
+    <meta name="google-signin-client_id" content="1085040233309-b7h19kra7r5dn1builj4k6v2lb00op9e.apps.googleusercontent.com">
+</head>
+<body>
+    <form action="/login" method="post"  class="login">
+         <h2>Welcome, User!</h2>
+         <p>Please log in</p>
+         <input type="email" placeholder="Email" required name="email"/>
+         <input type="password" placeholder="Password" required name="password" />
+         <input type="submit" value="Log In" />
+         <div class="g-signin2"  data-onsuccess="onSignIn"></div>
+         <div class="links">
+         <a href="/register">Register</a>
+         </div>
+         </form>
+</body>
+</html>

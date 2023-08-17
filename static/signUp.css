@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+*{
+box-sizing: border-box;
+}
+
+body 
+{
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #5B2876;
+}
+
+.page-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #5B2876;
+padding: 2rem 0;
+}
+
+.form-container {
+background-color: #FFF;
+padding: .5rem 2.5rem;
+box-shadow: 4px 4px 15px #000;
+border-radius: 15px;
+
+}
+
+.form-container h1 {
+background-color: #596C9A;
+border-radius: 15px;
+margin: 0;
+padding: 10px;
+color: #fff;
+text-align: center;
+text-shadow: 1px 1px 1px #000;
+
+}
+
+.entry {
+padding: 4px 0;
+margin: 0;
+
+}
+
+.entry label {
+display: block;
+margin: 0;
+padding: 5px;
+font-size: 16px;
+font-family: inherit;
+}
+
+.entry #username,
+.entry #email,
+.entry #password,
+.entry #password2,
+.entry #phone,
+.entry #birthday {
+margin: 0;
+padding: 5px 0;
+width: 100%;
+font-family: inherit;
+}
+
+.entry-gender,
+.entry-vehicles {
+font-size: 14px;
+
+}
+
+.hobbies label,
+.hobbies select,
+.feedback label,
+.feedback textarea {
+display: inline-block;
+font-family: inherit;
+}
+
+.form-buttons {
+display: flex;
+justify-content: center;
+}
+
+.form-btn {
+margin: 0 5px;
+padding: 5px 12px;
+border-radius: 5px;
+outline: none;
+font-size: 14px;
+}
+
+.form-btn:hover {
+background-color: #596C9A;
+color: #fff;
+}
+
+
+/* Contact Me Button */
+#contact-me {
+font-family: 'Titillium Web', sans-serif;
+background: #222222;
+color: #fff;
+font-weight: 600;
+position: fixed;
+text-align: center;
+padding: 10px 10px;
+border-radius: 20px 2px;
+margin: 0;
+right: 4px;
+bottom: 60px;
+transform: translateX(103%);
+transition: transform 0.6s ease-in-out;
+box-shadow: 2px 2px 12px black;
+}
+
+#contact-me.visible {
+transform: translateX(-4%);
+}
+
+.about-me{
+font-size: 1.2rem;
+}
+
+.social-link {
+text-decoration: none;
+padding: 0 2px;
+color: white;
+}
+
+.social-link:hover {
+text-decoration: underline;
+}
+
+.social-link i {
+padding: 0 4px;
+}
+
+#social-btn {
+font-family: 'Titillium Web', sans-serif;
+background-color: #222222;
+box-shadow: 2px 2px 12px black;
+position: fixed;
+letter-spacing: 1px;
+right: 12px;
+bottom: 12px;
+font: inherit;
+border-radius: 36px;
+padding: 5px 16px;
+color: #FFF;
+outline: none;
+cursor: pointer;
+}
+
+#social-btn:hover {
+transform: scale(1.02);
+}
+#social-btn:active {
+transform: scale(.98);
+}
+
+.fa-times-circle {
+position: absolute;
+top: 12px;
+right: 12px;
+transform: scale(1.4);
+ cursor: pointer;
+}
+.fa-times-circle:hover {
+transform: scale(1.6);
+}
