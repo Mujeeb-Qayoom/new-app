@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const path = require('path');
 const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -10,7 +11,21 @@ const {PrismaClient } = require('./prisma/generated/client');
 const prisma = new PrismaClient();
 const app = express();
 
+const staticFiles = (path.join(__dirname,'/statov'));
+const viewFiles = (path.join(__dirname,'/templates/views'));
 app.use(express.json());
+app.use(express.urlencoded({extended : true}));
+app.use(express.static(staticFiles));
+app.set('view engine','hbs');
+app.set('views',viewFiles);
+
+
+
+
+app.get('/signUp', async (req,res)=>{
+
+    res.render('signUp');
+})
 
 // Signup route
 app.post('/signup', async (req, res) => {
@@ -67,7 +82,7 @@ app.post('/login', async (req, res) => {
 });
 
 app.get('/users', async(req,res)=>{
-    
+
 const users = await prisma.user.findMany()
 console.log(users);
 
